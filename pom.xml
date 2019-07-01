@@ -119,6 +119,18 @@
     		<scope>test</scope>
 		</dependency>
     </dependencies>
+	
+  <distributionManagement>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://52.66.208.108:8081/repository/pull_request_snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>nexus-releases</id>
+      <url>http://52.66.208.108:8081/repository/pull_request_releases/</url>
+    </repository>
+  </distributionManagement>
+	
     <build>
         <plugins>
             <plugin>
